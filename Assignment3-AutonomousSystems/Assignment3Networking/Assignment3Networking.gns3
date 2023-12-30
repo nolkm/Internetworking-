@@ -1,0 +1,395 @@
+{
+    "auto_start": false,
+    "name": "Assignment3Networking",
+    "project_id": "c3ff30f3-7b49-4843-97a6-becd1894d447",
+    "revision": 4,
+    "topology": {
+        "ellipses": [
+            {
+                "border_style": 2,
+                "height": 200.0,
+                "width": 200.0,
+                "x": -626.0,
+                "y": -1.0
+            },
+            {
+                "border_style": 2,
+                "height": 200.0,
+                "width": 200.0,
+                "x": -206.82842712474618,
+                "y": -391.71572875253804
+            },
+            {
+                "border_style": 2,
+                "height": 200.0,
+                "width": 200.0,
+                "x": 200.81832585697947,
+                "y": -21.213203435596427
+            }
+        ],
+        "links": [
+            {
+                "description": "Link from R2 port FastEthernet0/0 to R1 port FastEthernet0/0",
+                "destination_node_id": 1,
+                "destination_port_id": 3,
+                "id": 1,
+                "source_node_id": 2,
+                "source_port_id": 1
+            },
+            {
+                "description": "Link from R1 port FastEthernet1/0 to R3 port FastEthernet0/0",
+                "destination_node_id": 3,
+                "destination_port_id": 5,
+                "id": 2,
+                "source_node_id": 1,
+                "source_port_id": 4
+            },
+            {
+                "description": "Link from R3 port FastEthernet1/0 to R2 port FastEthernet1/0",
+                "destination_node_id": 2,
+                "destination_port_id": 2,
+                "id": 3,
+                "source_node_id": 3,
+                "source_port_id": 6
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Router c3600",
+                "dynamips_id": 1,
+                "id": 1,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R1",
+                    "x": 17.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R2 on port FastEthernet0/0",
+                        "id": 3,
+                        "link_id": 1,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to R3 on port FastEthernet0/0",
+                        "id": 4,
+                        "link_id": 2,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3640",
+                    "clock_divisor": 4,
+                    "console": 5000,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60598a54",
+                    "idlesleep": 30,
+                    "image": "c3640-js-mz.124-13.image",
+                    "image_md5sum": "5a7137c33591c6ca34f33a9ea48b6424",
+                    "iomem": 5,
+                    "mac_addr": "cc01.3350.0000",
+                    "mmap": true,
+                    "name": "R1",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "NM-1FE-TX",
+                    "slot1": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i1_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3600",
+                "vm_id": "cfe9ca84-3795-4a65-9b96-ab53b0a94ee3",
+                "x": -143.0,
+                "y": -212.0
+            },
+            {
+                "description": "Router c3600",
+                "dynamips_id": 2,
+                "id": 2,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R2",
+                    "x": 17.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R1 on port FastEthernet0/0",
+                        "id": 1,
+                        "link_id": 1,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to R3 on port FastEthernet1/0",
+                        "id": 2,
+                        "link_id": 3,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3640",
+                    "clock_divisor": 4,
+                    "console": 5001,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60598a54",
+                    "idlesleep": 30,
+                    "image": "c3640-js-mz.124-13.image",
+                    "image_md5sum": "5a7137c33591c6ca34f33a9ea48b6424",
+                    "iomem": 5,
+                    "mac_addr": "cc02.7500.0000",
+                    "mmap": true,
+                    "name": "R2",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "NM-1FE-TX",
+                    "slot1": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i2_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3600",
+                "vm_id": "eb61fe36-24d8-4395-b920-c1294cbf8d09",
+                "x": -503.0,
+                "y": 19.0
+            },
+            {
+                "description": "Router c3600",
+                "dynamips_id": 3,
+                "id": 3,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R3",
+                    "x": 17.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R1 on port FastEthernet1/0",
+                        "id": 5,
+                        "link_id": 2,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to R2 on port FastEthernet1/0",
+                        "id": 6,
+                        "link_id": 3,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3640",
+                    "clock_divisor": 4,
+                    "console": 5002,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60598a54",
+                    "idlesleep": 30,
+                    "image": "c3640-js-mz.124-13.image",
+                    "image_md5sum": "5a7137c33591c6ca34f33a9ea48b6424",
+                    "iomem": 5,
+                    "mac_addr": "cc03.067c.0000",
+                    "mmap": true,
+                    "name": "R3",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "NM-1FE-TX",
+                    "slot1": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i3_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3600",
+                "vm_id": "abaff593-4797-4d24-9b7e-83b4fa3fb38d",
+                "x": 180.0,
+                "y": 26.0
+            }
+        ],
+        "notes": [
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "11.0.0.0/8",
+                "x": -163.20101012677665,
+                "y": -423.6370849898476
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "13.0.0.0/8",
+                "x": 264.443650813896,
+                "y": 187.4705627484771
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "12.0.0.0/8",
+                "x": -572.0,
+                "y": 206.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "          10.0.0.0/8",
+                "x": -250.0,
+                "y": 38.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "20.0.0.0/8",
+                "x": 58.0,
+                "y": -100.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "30.0.0.0/8",
+                "x": -372.0,
+                "y": -103.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -443.0,
+                "y": -19.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -427.0,
+                "y": 47.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 160.0,
+                "y": 64.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 174.0,
+                "y": -24.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -69.0,
+                "y": -194.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -168.0,
+                "y": -201.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1 LOOP",
+                "x": 252.0,
+                "y": 48.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1 LOOP",
+                "x": -141.0,
+                "y": -278.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1 LOOP",
+                "x": -546.0,
+                "y": 52.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "ROUTER #1\nen\nconf t\nhostname nolkm-Router1\nint f0/0\nip addr 30.0.0.1 255.0.0.0\nno shut\nint f1/0\nip addr 20.0.0.1 255.0.0.0\nno shut\nint loop0\nip addr 11.0.0.1 255.0.0.0\nrouter rip\nnetwork 20.0.0.0 \nnetwork  30.0.0.0\nnetwork 11.0.0.0\nend",
+                "x": 26.870057685088874,
+                "y": -486.8473298326141
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "ROUTER #3\nen\nconf t\nhostname nolkm-Router3\nint f0/0\nip addr 20.0.0.2 255.0.0.0\nno shut\nint f1/0\nip addr 10.0.0.2 255.0.0.0\nno shut\nint loop0\nip addr 13.0.0.1 255.0.0.0\nrouter rip\nnetwork 10.0.0.0\nnetwork 20.0.0.0 \nnetwork 13.0.0.0\nend",
+                "x": 460.6488450227788,
+                "y": -268.2502166379443
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "ROUTER #2\nen\nconf t\nhostname nolk-Router2\nint f0/0\nip addr 30.0.0.2 255.0.0.0\nno shut\nint f1/0\nip addr 10.0.0.1 255.0.0.0\nno shut\nint loop0\nip addr 12.0.0.1 255.0.0.0\nrouter rip\nnetwork 30.0.0.0\nnetwork 10.0.0.0\nnetwork 12.0.0.0 \nend",
+                "x": -760.8468965567253,
+                "y": -375.12445840513914
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "MICHAEL-AARON NOLK \nSTUDENT NUM #991673010",
+                "x": -538.8974028955583,
+                "y": -414.1080810142133
+            }
+        ],
+        "servers": [
+            {
+                "host": "127.0.0.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.2"
+}

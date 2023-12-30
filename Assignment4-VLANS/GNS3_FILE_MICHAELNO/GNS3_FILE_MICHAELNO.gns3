@@ -1,0 +1,517 @@
+{
+    "auto_start": false,
+    "name": "GNS3_FILE_MICHAELNO",
+    "project_id": "182f319e-db5e-4156-b21a-2476ec0eef9f",
+    "revision": 4,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from PC1 port Ethernet0 to R1 port FastEthernet0/1",
+                "destination_node_id": 1,
+                "destination_port_id": 2,
+                "id": 5,
+                "source_node_id": 2,
+                "source_port_id": 17
+            },
+            {
+                "description": "Link from PC3 port Ethernet0 to R1 port FastEthernet0/3",
+                "destination_node_id": 1,
+                "destination_port_id": 4,
+                "id": 6,
+                "source_node_id": 4,
+                "source_port_id": 19
+            },
+            {
+                "description": "Link from PC2 port Ethernet0 to R1 port FastEthernet0/2",
+                "destination_node_id": 1,
+                "destination_port_id": 3,
+                "id": 7,
+                "source_node_id": 3,
+                "source_port_id": 18
+            },
+            {
+                "description": "Link from R2 port FastEthernet0/0 to R1 port FastEthernet0/15",
+                "destination_node_id": 1,
+                "destination_port_id": 16,
+                "id": 8,
+                "source_node_id": 5,
+                "source_port_id": 20
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Router c3600",
+                "dynamips_id": 1,
+                "id": 1,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R1",
+                    "x": 17.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 1,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to PC1 on port Ethernet0",
+                        "id": 2,
+                        "link_id": 5,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to PC2 on port Ethernet0",
+                        "id": 3,
+                        "link_id": 7,
+                        "name": "FastEthernet0/2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to PC3 on port Ethernet0",
+                        "id": 4,
+                        "link_id": 6,
+                        "name": "FastEthernet0/3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 5,
+                        "name": "FastEthernet0/4",
+                        "port_number": 4
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 6,
+                        "name": "FastEthernet0/5",
+                        "port_number": 5
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 7,
+                        "name": "FastEthernet0/6",
+                        "port_number": 6
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 8,
+                        "name": "FastEthernet0/7",
+                        "port_number": 7
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 9,
+                        "name": "FastEthernet0/8",
+                        "port_number": 8
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 10,
+                        "name": "FastEthernet0/9",
+                        "port_number": 9
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 11,
+                        "name": "FastEthernet0/10",
+                        "port_number": 10
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 12,
+                        "name": "FastEthernet0/11",
+                        "port_number": 11
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 13,
+                        "name": "FastEthernet0/12",
+                        "port_number": 12
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 14,
+                        "name": "FastEthernet0/13",
+                        "port_number": 13
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 15,
+                        "name": "FastEthernet0/14",
+                        "port_number": 14
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R2 on port FastEthernet0/0",
+                        "id": 16,
+                        "link_id": 8,
+                        "name": "FastEthernet0/15",
+                        "nio": "NIO_UDP",
+                        "port_number": 15
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3640",
+                    "clock_divisor": 4,
+                    "console": 5000,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60598a54",
+                    "idlesleep": 30,
+                    "image": "c3640-js-mz.124-13.image",
+                    "image_md5sum": "5a7137c33591c6ca34f33a9ea48b6424",
+                    "iomem": 5,
+                    "mac_addr": "cc01.17e0.0000",
+                    "mmap": true,
+                    "name": "R1",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "NM-16ESW",
+                    "sparsemem": true,
+                    "startup_config": "configs/i1_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "type": "C3600",
+                "vm_id": "30bc3153-550d-4617-b579-19d57e45a638",
+                "x": 82.5634918610404,
+                "y": -60.08326112068522
+            },
+            {
+                "description": "VPCS device",
+                "id": 2,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC1",
+                    "x": 12.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R1 on port FastEthernet0/1",
+                        "id": 17,
+                        "link_id": 5,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5001,
+                    "name": "PC1",
+                    "startup_script_path": "startup.vpc"
+                },
+                "server_id": 1,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "b47f761a-653f-4f59-9f89-2a2bb03d8959",
+                "x": -183.5,
+                "y": 88.5
+            },
+            {
+                "description": "VPCS device",
+                "id": 3,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC2",
+                    "x": 12.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R1 on port FastEthernet0/2",
+                        "id": 18,
+                        "link_id": 7,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5002,
+                    "name": "PC2",
+                    "startup_script_path": "startup.vpc"
+                },
+                "server_id": 1,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "bc18ed9a-73e6-4236-8afe-b8e4792c0a15",
+                "x": 413.4137802864844,
+                "y": -98.5071426749364
+            },
+            {
+                "description": "VPCS device",
+                "id": 4,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC3",
+                    "x": 12.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R1 on port FastEthernet0/3",
+                        "id": 19,
+                        "link_id": 6,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5003,
+                    "name": "PC3",
+                    "startup_script_path": "startup.vpc"
+                },
+                "server_id": 1,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "5e4f23ec-a875-4d35-8f52-731d5b535a79",
+                "x": 228.61984104714455,
+                "y": 123.04415587728431
+            },
+            {
+                "description": "Router c3600",
+                "dynamips_id": 2,
+                "id": 5,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R2",
+                    "x": 24.571067811865476,
+                    "y": -29.242640687119263
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R1 on port FastEthernet0/15",
+                        "id": 20,
+                        "link_id": 8,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3640",
+                    "clock_divisor": 4,
+                    "console": 5004,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60598a54",
+                    "idlesleep": 30,
+                    "image": "c3640-js-mz.124-13.image",
+                    "image_md5sum": "5a7137c33591c6ca34f33a9ea48b6424",
+                    "iomem": 5,
+                    "mac_addr": "cc02.1fac.0000",
+                    "mmap": true,
+                    "name": "R2",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i2_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3600",
+                "vm_id": "b1bfdb77-17d8-4e0e-9426-3754ee611908",
+                "x": 84.14927829866734,
+                "y": -319.74011537017765
+            }
+        ],
+        "notes": [
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "vlan database\nvlan 10 name Sales\nvlan 20 name Marketing\nexit\n\nconf t\nhostname NOLKM-SWITCH1\nno ip routing\n\n",
+                "x": -689.3969696196699,
+                "y": -326.8553390593274
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "conf t\nint f0/1\nswitchport mode access\nswitchport access vlan 10\n\nint f0/2\nswitchport mode access\nswitchport access vlan 20\n\nint f0/3\nswitchport mode access\nswitchport access vlan 20\n\nint f0/15\nswitchport mode trunk\nswitchport trunk encapsulation dot1q\nend\n\n**DONE**\n\n",
+                "x": -691.7106781186546,
+                "y": -123.72539674441616
+            },
+            {
+                "color": "#ff000000",
+                "font": "MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0",
+                "text": "\nip  10.10.0.2 255.255.255.0 10.10.0.1",
+                "x": -260.21529547664943,
+                "y": 150.96298679765215
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "e0",
+                "x": -98.99494936611664,
+                "y": 95.80865786510142
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "e0",
+                "x": 208.09040379562163,
+                "y": 122.87972567696687
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "e0",
+                "x": 394.9676041556469,
+                "y": -69.25230867899737
+            },
+            {
+                "color": "#ff000000",
+                "font": "MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0",
+                "text": "ip 10.20.0.3 255.255.255.0 10.20.0.1",
+                "x": 236.17366491630685,
+                "y": 193.38939366884495
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "ip 10.20.0.2 255.255.255.0 10.20.0.1",
+                "x": 407.29350596345137,
+                "y": -20.15685424949238
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "VLAN 20\nMarketing  \n10.20.0.0/24",
+                "x": 260.21529547664943,
+                "y": -259.1589462905455
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "VLAN 10\n Sales\n10.10.0.0/24",
+                "x": -132.93607486307093,
+                "y": -219.56096654409873
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "conf t\nhostname NOLKM-ROUTER1\nint f0/0\nno shut\nint f0/0.10\nencap dot1q 10\nip addr 10.10.0.1 255.255.255.0\nint f0/0.20\nencap dot1q 20\nip addr 10.20.0.1 255.255.255.0\nend",
+                "x": 506.2884553295678,
+                "y": -383.6097397793777
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "f0/15",
+                "x": 131.52186130069785,
+                "y": -106.42388155425118
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "f0/2",
+                "x": 165.46298679765215,
+                "y": -49.855339059327356
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "f0/3",
+                "x": 118.99494936611669,
+                "y": -1.5710678118654577
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "f0/1",
+                "x": 34.34314575050769,
+                "y": -9.855339059327356
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.10.0.1",
+                "x": -38.18376618407356,
+                "y": -298.75692603699207
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "10.20.0.1",
+                "x": 173.94826817189065,
+                "y": -298.756926036992
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "f0/0",
+                "x": 140.0071426749364,
+                "y": -266.2300141024109
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "FOR THE PING pc1 \n\nping 10.10.0.1\nping 10.20.0.1\n\nping 10.20.0.3\nping 10.20.0.2",
+                "x": -233.34523779156058,
+                "y": 207.53152929257578
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "FOR THE PING pc2 \n\nping 10.10.0.1\nping 10.20.0.1\n\nping 10.10.0.2\nping 10.20.0.2",
+                "x": 275.77164466275343,
+                "y": 241.47265478953017
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "FOR THE PING pc3 \n\nping 10.10.0.1\nping 10.20.0.1\n\nping 10.10.0.2\nping 10.20.0.3",
+                "x": 494.9747468305832,
+                "y": 16.612698372208087
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "MICHAEL NOLK #991673010",
+                "x": -502.04581464244865,
+                "y": -464.2199128346441
+            }
+        ],
+        "servers": [
+            {
+                "host": "127.0.0.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.2"
+}
